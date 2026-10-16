@@ -1,5 +1,8 @@
 # Anything but a Game Controller 🚗💨
 
+## 📺 Video Demo
+Watch the mobile motion controller in action: [Click here to watch the demo video on Google Drive](https://drive.google.com/file/d/16qjBrNXpKr00jnDYZjr7izypUQwAvEjG/view?usp=sharing)
+
 A real-time motion-controlled web game where an ordinary smartphone is transformed into a low-latency steering wheel using device orientation sensors and WebSockets.
 
 ## 🚀 Tech Stack
