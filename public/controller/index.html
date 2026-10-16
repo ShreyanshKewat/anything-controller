@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Mobile Controller</title>
+  <style>
+    body { margin: 0; background: #111; color: #fff; font-family: sans-serif; text-align: center; touch-action: none; }
+    #setup { padding: 50px 20px; }
+    input, button { font-size: 1.2rem; padding: 10px; margin: 10px; border-radius: 5px; border: none; }
+    button { background: #00e676; font-weight: bold; color: #000; }
+    #play-area { display: none; width: 100vw; height: 100vh; background: #222; flex-direction: column; justify-content: center; }
+    #restartBtn { display: none; background: #ff5252; color: white; padding: 20px; font-size: 1.5rem; margin: 20px; }
+    .calibrate-text { font-size: 1.5rem; padding: 40px; border: 2px dashed #444; margin: 20px; }
+    #status { padding: 15px; color: #aaa; position: absolute; top: 0; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="status">Disconnected</div>
+
+  <div id="setup">
+    <input id="roomCode" placeholder="Enter Room" maxlength="4">
+    <button id="connectBtn">Connect</button>
+  </div>
+
+  <div id="play-area">
+    <div class="calibrate-text" id="touch-area">TAP TO CALIBRATE</div>
+    <button id="restartBtn">GAME OVER - RESTART</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
