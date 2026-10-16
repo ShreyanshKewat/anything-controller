@@ -17,6 +17,14 @@ A real-time motion-controlled web game where an ordinary smartphone is transform
 3. **Orientation Calibration:** Users tap the mobile screen to establish a neutral baseline for their phone's pitch and roll, filtering out hand drift.
 4. **Dynamic Gameplay Loop:** Features real-time score tracking, an advancing police chase with obstacle-avoidance radar, haptic vibration feedback on crashes, and an automatic reconnection loop.
 
+## 🎮 Core Controls & Mechanics
+The system translates natural physical gestures into seamless game actions through the mobile browser's DeviceOrientation API:
+
+* **Steering Controls:** Tilting the smartphone to the left or right maps directly to the device's roll axis (`gamma`), steering the vehicle smoothly across lanes.
+* **Speed & Positioning:** Tilting the phone forward (pitch `beta`) accelerates the car and slides it upward on the screen, allowing players to outrun threats. Tilting back decelerates the vehicle.
+* **Haptic Feedback & Game Over:** Colliding with traffic or being caught by the advancing police triggers an immediate game over sequence accompanied by a double-pulse vibration feedback pattern on the mobile controller.
+* **Remote Restart:** Upon crashing, a dedicated restart button instantly appears on the phone screen, allowing players to reset the physics engine and jump straight back into the action without touching the laptop.
+
 ## 🛠️ Running Locally
 1. Install dependencies:
    ```bash
